@@ -1,0 +1,20 @@
+
+
+<link href="https://tableexport.css" rel="stylesheet" type="text/css">
+
+<script src="https://FileSaver.min.js"></script> 
+<script src="https://xlsx.core.min.js"></script> 
+<script src="https://tableexport.js"></script>  
+
+
+  $("#tabla").tableExport({
+            formats: ["xlsx"], //Tipo de archivos a exportar ("xlsx","txt", "csv", "xls")
+            position: 'top', // Posicion que se muestran los botones puedes ser: (top, bottom)                 
+            ignoreCols: [9],
+            trimWhitespace: true,
+            bootstrap: true, //Usar lo estilos de css de bootstrap para los botones (true, false)
+            fileName: "Pedidos", //Nombre del archivo 
+        });
+
+
+
